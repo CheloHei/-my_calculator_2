@@ -11,6 +11,7 @@ function cube() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 3);
 }
+
 function four() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 4);
@@ -20,6 +21,11 @@ function inverso(){
 	var res = document.querySelector(".result");
 	result= 1/num;
 	res.value = result;
+}
+function seno() {
+ var num = document.getElementById("n1");
+ num.value = Math.sin(num.value);
+
 }
 </script>
 </head>
@@ -31,7 +37,11 @@ function inverso(){
  	<button onclick="inverso()"> 1/x </button>
  	<button onclick="two()"> x^2 </button>
  <button onclick="cube()"> x^3 </button>
+
  <button onclick="four()"> x^4 </button>
+
+ <button onclick="seno()"> sin(x) </button>
+
  </p>
 </body>
 </html>
