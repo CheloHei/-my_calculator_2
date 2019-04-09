@@ -15,13 +15,20 @@ function four() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 4);
 }
+function inverso(){
+	var num = document.getElementById("n1").value;
+	var res = document.querySelector(".result");
+	result= 1/num;
+	res.value = result;
+}
 </script>
 </head>
 <body>
  <h1>Calculadora de Marcelo Gutierrez</h1>
  Number:
- <input type="text" id="n1">
+ <input type="text" id="n1" class="result">
  <p>
+ 	<button onclick="inverso()"> 1/x </button>
  	<button onclick="two()"> x^2 </button>
  <button onclick="cube()"> x^3 </button>
  <button onclick="four()"> x^4 </button>
